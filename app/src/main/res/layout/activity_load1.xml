@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/load_detail_map_image"
+    tools:context="com.truxapp.fbfire.Activity.LoadDetails1">
+
+    <include layout="@layout/snack_bar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/blackLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/black_color">
+
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_white_back" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_home_logo_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/image"
+                android:text="Load Details"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+                android:textColor="@color/white_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/source_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                        android:textColor="@color/white_color" />
+
+                    <ImageView
+                        android:id="@+id/arrowImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_arrow_white" />
+
+                    <TextView
+                        android:id="@+id/destination_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                        android:textColor="@color/white_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dateTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                    android:textColor="@color/white_color" />
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:gravity="center"-->
+            <!--android:id="@+id/titleTV"-->
+            <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"-->
+            <!--android:textColor="@color/white_color" />-->
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/blackLayout"
+        android:layout_marginTop="-30dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_color"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/selectFrighterTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing=".1"
+                        android:text="Selected Frighters"
+                        android:textColor="@color/light_black" />
+
+                    <EditText
+                        android:id="@+id/selectFrighterET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/selectFrighterTV"
+                        android:background="@android:color/transparent"
+                        android:editable="false"
+                        android:hint=""
+                        android:textColor="@color/black_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/greyInput"
+                        android:padding="3dp" />
+
+                    <TextView
+                        android:id="@+id/cargoTypeTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/selectFrighterET"
+                        android:letterSpacing=".1"
+                        android:text="Cargo Type"
+                        android:textColor="@color/light_black" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/cargoTypeET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cargoTypeTV"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/ic_arrow_drop_down"
+                        android:hint="Select Cargo"
+                        android:textColor="@color/black_color"
+                        android:textColorHint="@color/edittext_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/greyInput"
+                        android:padding="3dp" />
+
+                    <TextView
+                        android:id="@+id/requestLoadTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cargoTypeET"
+                        android:letterSpacing=".1"
+                        android:text="Specify Weight (ton)"
+                        android:textColor="@color/light_black" />
+
+                    <EditText
+                        android:id="@+id/requestLoadET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/requestLoadTV"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@mipmap/ic_pencil_grey600_24dp"
+                        android:hint="Enter Weight"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black_color"
+                        android:textColorHint="@color/edittext_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/greyInput"
+                        android:padding="3dp" />
+
+                    <TextView
+                        android:id="@+id/volumeTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/requestLoadET"
+                        android:letterSpacing=".1"
+                        android:text="Specify Volume (m3)"
+                        android:textColor="@color/light_black" />
+
+                    <EditText
+                        android:id="@+id/volumeET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/volumeTV"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@mipmap/ic_pencil_grey600_24dp"
+                        android:hint="Enter Volume"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/black_color"
+                        android:textColorHint="@color/edittext_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/greyInput"
+                        android:padding="3dp" />
+
+                    <TextView
+                        android:id="@+id/boxDimensionTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/volumeET"
+                        android:letterSpacing=".1"
+                        android:text="Box Dimension (in meter)"
+                        android:textColor="@color/light_black" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/boxDimensionTV"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/load_details_dimension_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/deleteTV"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="50"
+                            android:background="@drawable/sauare_btn2"
+                            android:gravity="center"
+                            android:text="Delete"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/light_black"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/replace_deleteTV"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/addMoreTV"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="50"
+                            android:background="@drawable/sauare_btn2"
+                            android:gravity="center"
+                            android:text="Add More"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/light_black" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/submitBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/addMoreTV"
+                        android:background="@drawable/reject_submit_layout"
+                        android:text="SUBMIT"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

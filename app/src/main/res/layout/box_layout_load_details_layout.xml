@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:longClickable="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/lengthLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="23"
+        android:background="@drawable/sqaure_btn"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Length"
+            android:textColor="@color/light_black" />
+
+        <EditText
+            android:id="@+id/lengthET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="----"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/edittext_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widthLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="23"
+        android:background="@drawable/sqaure_btn"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Width"
+            android:textColor="@color/light_black" />
+
+        <EditText
+            android:id="@+id/widthET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="----"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/edittext_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/heightLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="23"
+        android:background="@drawable/sqaure_btn"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Height"
+            android:textColor="@color/light_black" />
+
+        <EditText
+            android:id="@+id/heightET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="----"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/edittext_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numbOfBoxLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="30"
+        android:background="@drawable/sqaure_btn"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="No. of Box"
+            android:textColor="@color/light_black" />
+
+        <EditText
+            android:id="@+id/numbOfBoxesET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="----"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/edittext_color" />
+    </LinearLayout>
+</LinearLayout>

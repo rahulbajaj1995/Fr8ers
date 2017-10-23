@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.truxapp.fbfire.Activity.AvailableCharters">
+
+    <include
+        android:id="@+id/custom_tool_bar1"
+        layout="@layout/transparent_action_bar" />
+
+    <include layout="@layout/snack_bar_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/availavle_charter_fragment"
+            class="com.truxapp.fbfire.Fragment.AvailableCharterMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></fragment>
+
+        <include layout="@layout/flight_detail_card" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/request_quotattion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#ed1f24"
+        android:drawableLeft="@mipmap/ic_flight_white"
+        android:paddingLeft="20dp"
+        android:text="REQUEST QUOTATION"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#fff" />
+</LinearLayout>

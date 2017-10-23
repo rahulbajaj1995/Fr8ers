@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.truxapp.fbfire.Fragment.ProfileFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:background="@drawable/header_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anil Kumar"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cccccc"
+                android:padding="3dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Email ID" />
+
+            <TextView
+                android:id="@+id/emailTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anil.kumar@truxapp.com"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cccccc"
+                android:padding="3dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Alternate Email ID" />
+
+            <TextView
+                android:id="@+id/alternateEmailTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anil.kumar@yahoo.com"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cccccc"
+                android:padding="3dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Mobile No." />
+
+            <TextView
+                android:id="@+id/mobileNumberTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9898989878"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cccccc"
+                android:padding="3dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Alternate Mobile No." />
+
+            <TextView
+                android:id="@+id/alternateMobileNumberTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4578548754"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cccccc"
+                android:padding="3dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Company Details" />
+
+            <TextView
+                android:id="@+id/companyDetailsTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lohia International Cargo Services"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cccccc"
+                android:padding="3dp" />
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Address"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/addressTV"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="A-111, Paryavaran Complex, Saket"/>-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+
+    <!--<color name="colorPrimaryDark">#ed1f24</color>-->
+    <color name="greyInput">#cccccc</color>
+    <color name="red_color">#ed1f24</color>
+    <color name="white_color">#ffffff</color>
+    <color name="black_color">#000000</color>
+    <color name="UI_black">#7f7f7f</color>
+    <color name="light_black">#FF494646</color>
+    <color name="edittext_color">#999999</color>
+    <color name="quotation_background">#fef4f4</color>
+    <color name="drawer_line">#303030</color>
+
+
+</resources>

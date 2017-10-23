@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:title="  Dashboard"></item>-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/book_cargo"
+            android:title="  Search Charter" />
+        <item
+            android:id="@+id/quotation_history"
+            android:title="  Quotation History" />
+        <item
+            android:id="@+id/order_status"
+            android:title="  Order Status" />
+        <item
+            android:id="@+id/profile"
+            android:title="  Profile" />
+        <item
+            android:id="@+id/logout"
+            android:title="  Logout" />
+
+        <!--<item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />-->
+    </group>
+    <!--  <group android:id="@+id/grp1">
+          <item
+              android:id="@+id/navigation_item_1"
+              android:checked="true"
+              android:title="@string/navigation_ite1" />
+      </group>
+
+      <group android:id="@+id/grp2">
+          <item
+              android:id="@+id/navigation_item_2"
+              android:icon="@drawable/ic_home"
+              android:title="@string/navigation_item_2" />
+      </group>-->
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

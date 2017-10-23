@@ -1,0 +1,78 @@
+{
+  "project_info": {
+    "project_number": "808000058503",
+    "firebase_url": "https://fr8ers-55e10.firebaseio.com",
+    "project_id": "fr8ers-55e10",
+    "storage_bucket": "fr8ers-55e10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808000058503:android:bfcd2f324d50b82f",
+        "android_client_info": {
+          "package_name": "com.truxapp.fbfire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808000058503-spchm8tc89urhj8b0jdo9oo2ce3otiba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.truxapp.fbfire",
+            "certificate_hash": "29ad338d9819ae8ce4d52b61ad6c8a5b03296d63"
+          }
+        },
+        {
+          "client_id": "808000058503-dvtduel1ddl63i68mfh5eba6gl26inrn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.truxapp.fbfire",
+            "certificate_hash": "b6bfc413179e94ffc562021d406097ad6a16cf26"
+          }
+        },
+        {
+          "client_id": "808000058503-c0keb5srkun7m1gunrt2lgk8s6jd8888.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.truxapp.fbfire",
+            "certificate_hash": "d17ef5f70d76fb21d05f9c1661f8314806d11390"
+          }
+        },
+        {
+          "client_id": "808000058503-2pp39pkok6chtu032gcnsjk6rluicisk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG2rlz0IkOknJaCKg-UVXTn6_a5ozU2_E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808000058503-2pp39pkok6chtu032gcnsjk6rluicisk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "808000058503-5a46aovb9prckbmlbv1c8hbfntgpa0rb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Freighters"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
